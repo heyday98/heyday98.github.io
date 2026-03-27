@@ -23,10 +23,10 @@ repository               : "heyday98/heyday98.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpeg"
   name             : "Donghwan Kim"
   pronouns         : # example: "she/her"  
-  bio              : "2nd Year PhD student at Penn State"
+  bio              : "2nd Year PhD student @ Penn State"
   location         : "State College, PA"
   employer         : "The Pennsylvania State University"
   uri              : # URL
