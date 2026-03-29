@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am a 2nd year PhD student in Computer Science and Engineering at The Pennsylvania State University, advised by [Prof. Kiwan Maeng](https://kiwanmaeng.com/). My research interest lies in building efficient computer systems through hardware and software optimization. My work has spanned privacy-preserving machine learning (differentially private training, fully homomorphic encryption) and extends to LLM serving systems. Before joining Penn State, I was fortunate to work with [Prof. Jung Ho Ahn](https://geniajh.github.io/) at [SCALE](https://scale.snu.ac.kr/) lab.
+Hi, I am a 2nd year PhD student in Computer Science and Engineering at The Pennsylvania State University, advised by [Prof. Kiwan Maeng](https://kiwanmaeng.com/). My research interest lies in building efficient computer systems through hardware and software optimization. My work has spanned privacy-preserving machine learning (differentially private training, fully homomorphic encryption) and extends to LLM serving systems. Before joining Penn State, I was fortunate to work at [SCALE](https://scale.snu.ac.kr/) lab, advised by [Prof. Jung Ho Ahn](https://geniajh.github.io/).
 
 (Updated. Mar 2026)
 
