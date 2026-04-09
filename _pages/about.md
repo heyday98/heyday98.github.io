@@ -18,7 +18,7 @@ Our recent work "Cocoon: A System Architecture for Differentially Private Traini
 
 ## Publications
 
-- **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", OSDI 2026, link
+- **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", will be presented at OSDI'26
 
 - SeokHyeon Kong, **Donghwan Kim**, Euiseong Seo, Kiwan Maeng, "Characterizing the System Overhead of Discrete Noise Generation for Differential Privacy", *IEEE Computer Architecture Letters* 2025 [link](https://ieeexplore.ieee.org/document/11223060)
 
