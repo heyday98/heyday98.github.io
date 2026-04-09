@@ -61,3 +61,8 @@ Our recent work "Cocoon: A System Architecture for Differentially Private Traini
 
 **Programming Methodology** — *Spring 2022*
 - Taught weekly lab sessions / Implemented C++ final term project
+
+
+<div style="display: flex; justify-content: center; padding-top: 40px; padding-bottom: 20px; max-width: 400px; margin: 0 auto;">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=ydhmIGAGJy2WyUqDmKtdx-iKttAYnqQbakBVGjNGwe8&cl=ffffff&w=a"></script>
+</div>
