@@ -12,11 +12,12 @@ Hi, I am a 2nd year PhD student in Computer Science and Engineering at The Penns
 (Updated. Mar 2026)
 
 ## News
+Our recent work "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises" was accepted to OSDI 2026!
 **2026 Summer** I will be joining Hynix America, San Jose as a LLM Serving System Research Intern. 
 
 ## Publications
 
-- **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", Under review, [link](https://arxiv.org/abs/2510.07304)
+- **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", OSDI 2026, link
 
 - SeokHyeon Kong, **Donghwan Kim**, Euiseong Seo, Kiwan Maeng, "Characterizing the System Overhead of Discrete Noise Generation for Differential Privacy", *IEEE Computer Architecture Letters* 2025 [link](https://ieeexplore.ieee.org/document/11223060)
 
