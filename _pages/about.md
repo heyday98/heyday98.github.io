@@ -12,7 +12,8 @@ Hi, I am a 2nd year PhD student in Computer Science and Engineering at The Penns
 (Updated. Mar 2026)
 
 ## News
-Our recent work "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises" was accepted to OSDI 2026!
+Our recent work "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises" was accepted to **OSDI'26**!
+
 **2026 Summer** I will be joining Hynix America, San Jose as a LLM Serving System Research Intern. 
 
 ## Publications
