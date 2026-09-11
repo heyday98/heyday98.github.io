@@ -7,30 +7,34 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am a 2nd year PhD student in Computer Science and Engineering at The Pennsylvania State University, advised by [Prof. Kiwan Maeng](https://kiwanmaeng.com/). My research interest lies in building efficient computer systems through hardware and software optimization. My work has spanned privacy-preserving machine learning (differentially private training, fully homomorphic encryption) and extends to LLM serving systems. Before joining Penn State, I was fortunate to work at [SCALE](https://scale.snu.ac.kr/) lab, advised by [Prof. Jung Ho Ahn](https://geniajh.github.io/).
+Hi, I am a 3rd year PhD student in Computer Science and Engineering at The Pennsylvania State University, advised by [Prof. Kiwan Maeng](https://kiwanmaeng.com/). My research interest lies in building efficient computer systems through hardware and software optimization. My work has spanned privacy-preserving machine learning (differentially private training, fully homomorphic encryption) and extends to LLM serving systems. Before joining Penn State, I was fortunate to work at [SCALE](https://scale.snu.ac.kr/) lab, advised by [Prof. Jung Ho Ahn](https://geniajh.github.io/).
 
-(Updated. April 2026)
+(Updated. Sep 2026)
 
 ## News
-Our recent work "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises" was accepted to **OSDI'26**!
 
-**2026 Summer** I will be joining Hynix America, San Jose as a LLM Serving System Research Intern. 
+Our paper "Characterizing How Complex Agentic AI Systems Handle General Tasks: A Trace-Based Simulation Study" has been accepted to **IISWC'26** and selected as a **Best Paper Finalist**!
+
+Our recent work "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises" was accepted to **OSDI'26**!
 
 ---
 
 ## Publications
 
-- **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", in *USENIX Symposium on Operating Systems Design and Implementation (OSDI)*, 2026.
+- **[IISWC'26]** **Donghwan Kim**, Prakhar Singh, Younghoon Min, Jongryool Kim, Jongse Park, Kiwan Maeng, "Characterizing How Complex Agentic AI Systems Handle General Tasks: A Trace-Based Simulation Study", in *IEEE International Symposium on Workload Characterization (IISWC)*, 2026. (**Best Paper Finalist**)
 
-- SeokHyeon Kong, **Donghwan Kim**, Euiseong Seo, Kiwan Maeng, "Characterizing the System Overhead of Discrete Noise Generation for Differential Privacy", in *IEEE Computer Architecture Letters*, 2025. \[[link](https://ieeexplore.ieee.org/document/11223060)\]
+- **[OSDI'26]** **Donghwan Kim**, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin, Jongryool Kim, Jongse Park, Kiwan Maeng, "Cocoon: A System Architecture for Differentially Private Training with Correlated Noises", in *USENIX Symposium on Operating Systems Design and Implementation (OSDI)*, 2026.
+\[[link](https://www.usenix.org/conference/osdi26/presentation/kim-donghwan)\]
 
-- Jae Hyung Ju\*, Jaiyoung Park\*, Jongmin Kim, **Donghwan Kim**, Jung Ho Ahn, "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and Bootstrapping", in *ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2024. (\*equal contribution) \[[link](https://arxiv.org/pdf/2312.04356)\]
+- **[CAL'25]** SeokHyeon Kong, **Donghwan Kim**, Euiseong Seo, Kiwan Maeng, "Characterizing the System Overhead of Discrete Noise Generation for Differential Privacy", in *IEEE Computer Architecture Letters (CAL)*, 2025. \[[link](https://ieeexplore.ieee.org/document/11223060)\]
 
-- **Donghwan Kim**\*, Jaiyoung Park\*, Jongmin Kim, Sangpyo Kim, Jung Ho Ahn, "HyPHEN: A Hybrid Packing Method and Its Optimizations for Homomorphic Encryption-based Neural Networks", in *IEEE Access*, 2023. (\*equal contribution) \[[link](https://arxiv.org/pdf/2302.02407)\]
+- **[CCS'24]** Jae Hyung Ju\*, Jaiyoung Park\*, Jongmin Kim, **Donghwan Kim**, Jung Ho Ahn, "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and Bootstrapping", in *ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2024. (\*equal contribution) \[[link](https://arxiv.org/pdf/2312.04356)\]
 
-- Jaiyoung Park, **Donghwan Kim**, Wonkyung Jung, Sangpyo Kim, Jongmin Kim, Jung Hee Cheon, Jung Ho Ahn, "Toward Practical Privacy-Preserving Convolutional Neural Networks Exploiting Fully Homomorphic Encryption", in *Workshop on Data Integrity and Secure Cloud Computing (DISCC)*, 2023.  \[[link](https://arxiv.org/pdf/2310.16530)\]
+- **[Access'23]** **Donghwan Kim**\*, Jaiyoung Park\*, Jongmin Kim, Sangpyo Kim, Jung Ho Ahn, "HyPHEN: A Hybrid Packing Method and Its Optimizations for Homomorphic Encryption-based Neural Networks", in *IEEE Access*, 2023. (\*equal contribution) \[[link](https://arxiv.org/pdf/2302.02407)\]
 
-- Jongmin Kim, Sangpyo Kim, Jaewan Choi, Jaiyoung Park, **Donghwan Kim**, Jung Ho Ahn, "SHARP: A Short-Word Hierarchical Accelerator for Robust and Practical Fully Homomorphic Encryption", in *International Symposium on Computer Architecture (ISCA)*, 2023. \[[link](https://dl.acm.org/doi/10.1145/3579371.3589053)\]
+- **[DISCC'23]** Jaiyoung Park, **Donghwan Kim**, Wonkyung Jung, Sangpyo Kim, Jongmin Kim, Jung Hee Cheon, Jung Ho Ahn, "Toward Practical Privacy-Preserving Convolutional Neural Networks Exploiting Fully Homomorphic Encryption", in *Workshop on Data Integrity and Secure Cloud Computing (DISCC)*, 2023.  \[[link](https://arxiv.org/pdf/2310.16530)\]
+
+- **[ISCA'23]** Jongmin Kim, Sangpyo Kim, Jaewan Choi, Jaiyoung Park, **Donghwan Kim**, Jung Ho Ahn, "SHARP: A Short-Word Hierarchical Accelerator for Robust and Practical Fully Homomorphic Encryption", in *International Symposium on Computer Architecture (ISCA)*, 2023. \[[link](https://dl.acm.org/doi/10.1145/3579371.3589053)\]
 
 ---
 
