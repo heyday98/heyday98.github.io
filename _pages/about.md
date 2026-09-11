@@ -28,7 +28,7 @@ Our recent work "Cocoon: A System Architecture for Differentially Private Traini
 
 - **[CAL'25]** SeokHyeon Kong, **Donghwan Kim**, Euiseong Seo, Kiwan Maeng, "Characterizing the System Overhead of Discrete Noise Generation for Differential Privacy", in *IEEE Computer Architecture Letters (CAL)*, 2025. \[[link](https://ieeexplore.ieee.org/document/11223060)\]
 
-- **[CCS'24]** Jae Hyung Ju\*, Jaiyoung Park\*, Jongmin Kim, **Donghwan Kim**, Jung Ho Ahn, "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and Bootstrapping", in *ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2024. (\*equal contribution) \[[link](https://arxiv.org/pdf/2312.04356)\]
+- **[CCS'24]** Jae Hyung Ju\*, Jaiyoung Park\*, Jongmin Kim, **Donghwan Kim**, Jung Ho Ahn, "NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution and FHE Bootstrapping", in *ACM SIGSAC Conference on Computer and Communications Security (CCS)*, 2024. (\*equal contribution) \[[link](https://arxiv.org/pdf/2312.04356)\]
 
 - **[Access'23]** **Donghwan Kim**\*, Jaiyoung Park\*, Jongmin Kim, Sangpyo Kim, Jung Ho Ahn, "HyPHEN: A Hybrid Packing Method and Its Optimizations for Homomorphic Encryption-based Neural Networks", in *IEEE Access*, 2023. (\*equal contribution) \[[link](https://arxiv.org/pdf/2302.02407)\]
 
