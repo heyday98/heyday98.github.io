@@ -1,0 +1,219 @@
+%==============================================================================
+% Curriculum Vitae -- Donghwan Kim
+%
+% Build:  latexmk -pdf CV_donghwan_kim.tex     (or: make)
+% Engine: pdfLaTeX. Only standard CTAN packages, so this also compiles on
+%         Overleaf as-is with no extra .cls/.sty files.
+%==============================================================================
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}          % Times-like text, matches the old CV
+\usepackage[margin=0.8in,top=0.65in,bottom=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+%------------------------------------------------------------------ formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedbottom
+
+% Section headings: small caps, hairline rule underneath.
+\titleformat{\section}
+  {\large\scshape}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.6pt}]
+\titlespacing{\section}{0pt}{0.8em}{0.35em}
+
+% Tight list used for bullet details under an entry.
+\newenvironment{details}
+  {\begin{itemize}[leftmargin=1.3em,itemsep=0.12em,topsep=0.2em,parsep=0pt]}
+  {\end{itemize}}
+
+% Publication list: the venue tag sits in a fixed-width left column and the
+% entry body hangs beside it, so every entry aligns on the same margin.
+\newenvironment{publist}
+  {\begin{itemize}[leftmargin=5.4em,labelwidth=5.0em,labelsep=0.4em,align=left,
+                   itemsep=0.3em,topsep=0.2em,parsep=0pt]%
+   \hyphenpenalty=10000 \exhyphenpenalty=10000 \sloppy}
+  {\end{itemize}}
+
+%------------------------------------------------------------------- shortcuts
+% \entry{left-hand title}{right-hand date}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+% \pub{TAG} -- starts a publication entry; TAG goes in the left column
+\newcommand{\pub}[1]{\item[{[\textbf{#1}]}]}
+% own name, bolded in author lists
+\newcommand{\me}{\textbf{Donghwan Kim}}
+% equal-contribution marker
+\newcommand{\eq}{\textsuperscript{*}}
+% award annotation
+\newcommand{\award}[1]{\textit{(#1)}}
+% current month and year, e.g. "October 2026" -- no day, so it never looks stale
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi\ \the\year}
+
+\begin{document}
+
+%================================================================= header
+\begin{center}
+  {\LARGE\bfseries Donghwan Kim}\\[0.45em]
+  \href{mailto:djk6434@psu.edu}{djk6434@psu.edu}
+  \quad\textbullet\quad \href{https://heyday98.github.io/}{heyday98.github.io}
+  \quad\textbullet\quad \href{https://www.linkedin.com/in/dong-hwan-kim/}{linkedin.com/in/dong-hwan-kim}
+\end{center}
+
+%================================================================= education
+\section{Education}
+
+\entry{The Pennsylvania State University}{State College, PA \quad Aug 2024 -- Present}
+Doctor of Philosophy, Computer Science and Engineering \\
+Advisor: Kiwan Maeng
+
+\vspace{0.4em}
+\entry{Seoul National University (SNU)}{Seoul, Korea \quad Mar 2022 -- Feb 2024}
+Master of Science, Interdisciplinary Program in Artificial Intelligence \\
+Advisor: Jung Ho Ahn
+
+\vspace{0.4em}
+\entry{Seoul National University (SNU)}{Seoul, Korea \quad Mar 2016 -- Feb 2022}
+Bachelor of Science, Electrical and Computer Engineering, \textit{cum laude}
+\hfill {\footnotesize\itshape Two-year leave for military service}
+
+%================================================================= interests
+\section{Research Interests}
+
+My research focuses on building efficient computer systems through hardware--software
+co-design. My work spans privacy-preserving machine learning, including differentially
+private training and fully homomorphic encryption, and recently extends to LLM
+serving systems for agentic AI workloads.
+
+%================================================================= publications
+\section{Publications}
+
+\begin{publist}
+\pub{IISWC'26} \me, Prakhar Singh, Younghoon Min, Jongryool Kim, Jongse Park,
+  Kiwan Maeng, ``Characterizing How Complex Agentic AI Systems Handle General Tasks:
+  A Trace-Based Simulation Study,'' \textit{IEEE International Symposium on Workload
+  Characterization}, 2026 \award{Best Paper \& Distinguished Artifact Awards}
+
+\pub{OSDI'26} \me, Xin Gu, Jinho Baek, Timothy Lo, Younghoon Min, Kwangsik Shin,
+  Jongryool Kim, Jongse Park, Kiwan Maeng, ``Cocoon: A System Architecture for
+  Differentially Private Training with Correlated Noises,'' \textit{USENIX Symposium on
+  Operating Systems Design and Implementation}, 2026
+
+\pub{CAL'25} SeokHyeon Kong, \me, Euiseong Seo, Kiwan Maeng, ``Characterizing
+  the System Overhead of Discrete Noise Generation for Differential Privacy,''
+  \textit{IEEE Computer Architecture Letters}, 2025
+
+\pub{CCS'24} Jae Hyung Ju\eq, Jaiyoung Park\eq, Jongmin Kim, Minsik Kang, \me,
+  Jung Hee Cheon, Jung Ho Ahn,
+  ``NeuJeans: Private Neural Network Inference with Joint Optimization of Convolution
+  and FHE Bootstrapping,'' \textit{ACM SIGSAC Conference on Computer and Communications
+  Security}, 2024 \award{\eq equal contribution}
+
+\pub{Access'23} \me\eq, Jaiyoung Park\eq, Jongmin Kim, Sangpyo Kim,
+  Jung Ho Ahn, ``HyPHEN: A Hybrid Packing Method and Its Optimizations for Homomorphic
+  Encryption-based Neural Networks,'' \textit{IEEE Access}, 2023
+  \award{\eq equal contribution}
+
+\pub{DISCC'23} Jaiyoung Park, \me, Wonkyung Jung, Sangpyo Kim, Jongmin Kim,
+  Jung Hee Cheon, Jung Ho Ahn, ``Toward Practical Privacy-Preserving Convolutional
+  Neural Networks Exploiting Fully Homomorphic Encryption,'' \textit{Workshop on Data
+  Integrity and Secure Cloud Computing}, 2023
+
+\pub{ISCA'23} Jongmin Kim, Sangpyo Kim, Jaewan Choi, Jaiyoung Park, \me,
+  Jung Ho Ahn, ``SHARP: A Short-Word Hierarchical Accelerator for Robust and Practical
+  Fully Homomorphic Encryption,'' \textit{International Symposium on Computer
+  Architecture}, 2023
+\end{publist}
+
+%================================================================= awards
+\section{Awards \& Honors}
+
+\entry{Best Paper Award \& Distinguished Artifact Award}{IISWC 2026}
+
+%================================================================= work
+\section{Work Experience}
+
+\begin{samepage}
+\entry{LLM Serving System Research Intern}{San Jose, CA \quad May 2026 -- Aug 2026}
+SK Hynix America
+\begin{details}
+  \item Built an LLM serving simulator for agentic AI workloads
+  \item Explored CXL 3.0 memory pooling for agentic workloads
+\end{details}
+\end{samepage}
+
+%================================================================= research
+\section{Research Experience}
+
+\entry{Graduate Research Assistant}{State College, PA \quad Aug 2024 -- Present}
+The Pennsylvania State University \quad (Advisor: Kiwan Maeng)
+\begin{details}
+  \item \textit{Distributed training systems:} developing a scalable DP-SGD training
+    framework on DeepSpeed and PyTorch to optimize multi-GPU gradient aggregation
+\end{details}
+
+\vspace{0.5em}
+\entry{Graduate Research Assistant}{Seoul, Korea \quad Mar 2022 -- Feb 2024}
+Seoul National University \quad (Advisor: Jung Ho Ahn)
+\begin{details}
+  \item \textit{Algorithm optimization:} devised convolution algorithms and data packing
+    formats that minimize expensive homomorphic encryption operations
+  \item \textit{AI accelerator design:} designed a domain-specific architecture for
+    homomorphic encryption operations
+\end{details}
+
+%================================================================= tutorials
+\section{Tutorials}
+
+``CrypTorch: Easy-to-use and Efficient PyTorch-based Compiler Infrastructure for
+Machine Learning with MPC,'' \textit{ASPLOS 2026 Tutorial}
+\href{https://sites.google.com/view/cryptorch-asplos-2026-tutorial}{[link]}
+
+%================================================================= teaching
+\section{Teaching Experience}
+
+\entry{Introduction to Computer Architecture (CMPEN 431)}{Fall 2025}
+Teaching assistant --- weekly recitations, assignment grading
+
+\vspace{0.5em}
+\entry{Computer Organization and Design (CMPEN 331)}{Fall 2024}
+Teaching assistant --- weekly recitations and office hours, assignment and exam grading
+
+\vspace{0.5em}
+\entry{Programming Methodology}{Spring 2022}
+Teaching assistant --- weekly lab sessions, C++ final term project
+
+%================================================================= scholarships
+\section{Scholarships}
+
+\entry{AI Fellowship Scholarship}{2022}
+Seoul National University, Dept.\ of Engineering
+
+\vspace{0.5em}
+\entry{Merit-based Scholarship}{2016, 2017, 2020, 2021}
+Seoul National University, Dept.\ of Engineering
+
+\vspace{0.5em}
+\entry{Hansung Sonjaehan Scholarship}{2015}
+Hansung Sonjaehan Foundation --- \textit{\$4{,}000 for gifted students in science and
+engineering}
+
+%================================================================= skills
+\section{Technical Skills}
+
+\textit{Machine learning systems:} PyTorch, DeepSpeed, vLLM, Dynamo \\
+\textit{Programming languages:} Python, C/C++, CUDA, Verilog \\
+\textit{Algorithms \& math:} Differentially private SGD (DP-SGD), Fully Homomorphic
+Encryption (CKKS)
+
+\vfill
+\begin{center}
+  \footnotesize\color{gray} Last updated: \monthyear
+\end{center}
+
+\end{document}

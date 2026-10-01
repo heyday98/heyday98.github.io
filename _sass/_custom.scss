@@ -1,0 +1,158 @@
+/* ==========================================================================
+   CUSTOM OVERRIDES
+
+   Everything here is additive on top of the Academic Pages theme. It is the
+   last import in assets/css/main.scss, so it wins on specificity ties.
+
+   Colors come from the theme's --global-* custom properties, which are
+   redefined under html[data-theme="dark"], so all of this follows the
+   light/dark toggle without needing its own dark rules.
+
+   To revert the whole design pass: drop the "custom" line from main.scss.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Pill links
+
+   Pointers to a paper, repo, video or the CV are navigation, not prose, so
+   they read better as small outlined chips than as underlined body links.
+   -------------------------------------------------------------------------- */
+@mixin pill {
+  display: inline-block;
+  margin-right: 0.3em;
+  padding: 0.05em 0.5em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 3px;
+  color: var(--global-text-color-light);
+  font-size: 0.82em;
+  line-height: 1.7;
+  text-decoration: none;
+  text-indent: 0;
+  vertical-align: 0.08em;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus {
+    border-color: var(--global-link-color);
+    color: var(--global-link-color);
+    text-decoration: none;
+  }
+}
+
+.page__content a.pill {
+  @include pill;
+}
+
+/* --------------------------------------------------------------------------
+   Section headings
+
+   The CV uses one separation device per section -- small caps over a hairline.
+   The page previously used an <h2> *and* a <hr>, which reads as doubled-up.
+   Styling the heading itself lets the "---" rules come out of the markdown.
+   -------------------------------------------------------------------------- */
+.page__content {
+  h2 {
+    margin-top: 2.2em;
+    margin-bottom: 0.9em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--global-border-color);
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* First heading on the page does not need the big top gap. */
+  h2:first-of-type {
+    margin-top: 1.6em;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hanging lists (News, Publications)
+
+   The leading label -- a date, or a [VENUE'YY] tag -- sits in a fixed left
+   column and the entry body hangs beside it, so every entry starts on the
+   same margin. That is the structure the CV uses, and it is what makes a long
+   list scannable. The negative text-indent pulls the first line back under
+   the padding, and the inline-block label spans the gap.
+
+   Note the doubled selectors below. Kramdown emits a "tight" list
+   (<li><strong>) when the source has no blank lines between items, and a
+   "loose" one (<li><p><strong>) when it does. Both shapes have to be matched
+   or the alignment silently does nothing.
+   -------------------------------------------------------------------------- */
+@mixin hanging-list($indent, $label-width, $gap) {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: $gap;
+    padding-left: $indent;
+    text-indent: -$indent;
+    line-height: 1.6;
+
+    /* Loose lists wrap content in <p>; drop its margins so $gap governs. */
+    > p {
+      margin: 0;
+    }
+  }
+
+  li > strong:first-child,
+  li > p:first-child > strong:first-child {
+    display: inline-block;
+    width: $label-width;
+    text-indent: 0;
+    color: var(--global-text-color-light);
+  }
+}
+
+.news {
+  @include hanging-list(6.5em, 6em, 0.6em);
+
+  li > strong:first-child,
+  li > p:first-child > strong:first-child {
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+}
+
+.pub-list {
+  @include hanging-list(6.8em, 6.3em, 1.1em);
+
+  li > strong:first-child,
+  li > p:first-child > strong:first-child {
+    font-weight: 700;
+    font-size: 0.92em;
+  }
+
+  /* Links in this list are paper/code/video pointers, not prose links. */
+  a {
+    @include pill;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Narrow screens
+
+   The hanging indent costs too much width on a phone, so the tag/date moves
+   onto its own line and the body returns to the left margin.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 37.5em) {
+  .news,
+  .pub-list {
+    li {
+      padding-left: 0;
+      text-indent: 0;
+    }
+
+    li > strong:first-child,
+    li > p:first-child > strong:first-child {
+      display: block;
+      width: auto;
+      margin-bottom: 0.15em;
+    }
+  }
+}
